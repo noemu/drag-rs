@@ -1,0 +1,287 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'drag'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=drag"
+                ],
+                "filter": {
+                    "name": "drag",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'tauri_plugin_drag'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=tauri-plugin-drag"
+                ],
+                "filter": {
+                    "name": "tauri_plugin_drag",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'tauri_plugin_drag_as_window'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=tauri-plugin-drag-as-window"
+                ],
+                "filter": {
+                    "name": "tauri_plugin_drag_as_window",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'tao-app'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=tao-app",
+                    "--package=tao-app"
+                ],
+                "filter": {
+                    "name": "tao-app",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'tao-app'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=tao-app",
+                    "--package=tao-app"
+                ],
+                "filter": {
+                    "name": "tao-app",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'tauri-app'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=tauri-app",
+                    "--package=tauri-app"
+                ],
+                "filter": {
+                    "name": "tauri-app",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'tauri-app'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=tauri-app",
+                    "--package=tauri-app"
+                ],
+                "filter": {
+                    "name": "tauri-app",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'tauri-app-dragout'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=tauri-app-dragout",
+                    "--package=tauri-app-dragout"
+                ],
+                "filter": {
+                    "name": "tauri-app-dragout",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'tauri-app-dragout'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=tauri-app-dragout",
+                    "--package=tauri-app-dragout"
+                ],
+                "filter": {
+                    "name": "tauri-app-dragout",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'winit-app'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=winit-app",
+                    "--package=winit-app"
+                ],
+                "filter": {
+                    "name": "winit-app",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'winit-app'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=winit-app",
+                    "--package=winit-app"
+                ],
+                "filter": {
+                    "name": "winit-app",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'wry-app'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=wry-app",
+                    "--package=wry-app"
+                ],
+                "filter": {
+                    "name": "wry-app",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'wry-app'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=wry-app",
+                    "--package=wry-app"
+                ],
+                "filter": {
+                    "name": "wry-app",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'wry-app-dragout'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=wry-app-dragout",
+                    "--package=wry-app-dragout"
+                ],
+                "filter": {
+                    "name": "wry-app-dragout",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'wry-app-dragout'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=wry-app-dragout",
+                    "--package=wry-app-dragout"
+                ],
+                "filter": {
+                    "name": "wry-app-dragout",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -14,16 +14,15 @@ fn main() {
         dpi::LogicalSize,
         event::{DeviceEvent, ElementState, Event, StartCause, WindowEvent},
         event_loop::{ControlFlow, EventLoop},
-        window::WindowBuilder,
+        window::Window,
     };
 
     let event_loop = EventLoop::new().unwrap();
-    let window = WindowBuilder::new()
+    let window_attributes = Window::default_attributes()
         .with_inner_size(LogicalSize::new(400., 100.))
-        .with_title("Drag Example")
-        .build(&event_loop)
-        .unwrap();
+        .with_title("Drag Example");
 
+    let window = event_loop.create_window(window_attributes).unwrap();
     event_loop
         .run(move |event, elwt| {
             elwt.set_control_flow(ControlFlow::Wait);
